@@ -16,7 +16,7 @@ void DrawThreadAddTwo(int num) {
 
 int main(){
     int num = 1;
-    //マルチスレッド
+   
     std::thread th1(DrawThread, num);
     th1.join();
     std::thread th2(DrawThreadAddOne, num);
